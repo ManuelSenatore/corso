@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <!--Nel tag head metto le info ausiliarie (titolo della pagina, descrizione etc.)-->
+<title>la mia prima pagina web</title>
+<meta charset="utf-8"><!--meta èun tag empty cioè a differenza della maggioranza non chiude-->
+<meta name="description" content="qui andrebbe la descrizione della mia pagina">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--
+    questo è un commento
+nel tag body metto tutti i tag che devono essere parsati dal browser
+-->
+<h1>titolo principale </h1>
+<h2>titolo principale</h2>
+<h3>tiolo principale</h3>
+<h4>titolo principale</h4>
+<h5>tiolo principale</h5>
+<h6>titolo principale</h6>
+<!--tag h sono elementi di blocco. occupano tutto lo spazio in orizzontale e si posizionano uno sotto l'altro -->
+<p>anche il paragrafo è un tag di blocco</p>
+<p>infatti se metto un secondo paragrafo si posiziona a capo</p>
+<!-- le liste o elenchi puntati,due tipi di liste ordinate e non ordinate -->
+<ol type="a"></a><!-- lista ordinata -->
+    <li>primo elemento</li>
+    <li>secondo elemento</li>
+    <li>terzo elemento</li>
+    </ol>
+    <ul><!--lista non ordinata-->
+        <li>provare il codice sull'editor
+            <ul>
+                <li>aprire una nuova pagina e inserire il codice</li>
+                <li>salvare le modifiche</li>
+                </ul>
+                </li>
+                <li>testare i risultati sul browser</li>
+                </ul>
+            
+<dl><!--description list-->
+                <dt>html</dt>
+<dd>lingaggio di marcatura semantica</dd>
+<dt>css</dt>
+<dd>linguaggio di formattazione</dd>
+<dt>browser</dt>
+<dd>programma per la navigazione</dd>
+</dl>
+<adress>tag semantico: ci dice che in questa porzione di contenuto ci sono informazione anagrafiche (contatti, indirizzi etc)</adress>
+<blockquote cite="https://www.wikipedia.it" tag che racchiude una citazione</blockquote>
+<!-- caratteri speciali -->
+<p>3 è &lt; di 4 </p>
+<p>4 è &gt; di 3 </p>
+<p> &amp; e commerciale</p>
+<p>&quot; doppio apice</p>
+<p>&apos; apice singolo</p>
+<p>&apos; apice &nbsp; singolo e spazi vuoti </p>
+<!-- altri caratteri speciali -->
+<p>&euro; euro &copy; copiright &reg; trademark </p>
+<!-- elementi di blocco vanno automaticamente a capo-->
+<!-- elementi inline automaticamente uno accanto all'altro-->
+<span>inserisco un testo</span>
+<span>inserisco un altro testo</span>
+<p>in questo bel paragrafo metto <b>una parola in grassetto</b>a scopo estetico
+    esiste anche un <strong>altro modo</strong> di fare i grassetti.<br><!-- manda a capo, è un tag che non ha chiusura-->
+    inoltre posso mettere una parola in <i>corsivo</i> per fini estetici oppurre perchè è un contenuto <em>importante</em>
+    Questi tag così descritti seguono le regole della W3C aggiornati al <del>2015</del> <ins>2022</ins>
+</p>
+<!-- altri tag inline -->
+<p>Questo è un paragrafo inserito in un tag <abbr title="hyper text markup language"><html</abbr>
+    inserito con il tag <code> &lt;p&gt;</code> Posso evidenziare contenuti anche grazie al tag <mark>mark</mark>
+    Posso inserire anche delle citazioni grazie al tag q <q>Qui va la mia citazione.. q sta per quotation</q>
+    Un altro modo di inserire delle citazioni è con il tag <cite>inserisco la mia citazione</cite>
+    <!--blockquote citazione ma elemento di blocco, cite elemento inline-->
+</p>
+<!--ulteriori tag di formattazione-->
+<p>Questo è un <pre>testo non formattato</pre>. Posso indicare dei tasti della tastiera <kbd>premere CTRL</kbd>
+oppure degli output con <samp>F5 per aggiornare</samp> </p> 
+<hr><!--horizontal row è una riga orizzontale. Anche hr è vuoto ma non ha chiusura--> 
+<p>Quando parleremo di javascript impareremo a usare le <var>variabilie</var>
+e le funzioni matematiche come il quadrato ad esempio di <sup>2</sup>o <sub>3</sub>
+
+<!--inserire un'immagine-->
+<img src="formato-immagini-webp_710.jpeg" alt="foto" width="300"><!-- posso usare anche height -->
+<!-- formati possibili jpg/jpeg, png/apng, gif, svg, webp, AVIF -->
+<!-- se l'immagine è allo stesso livello del file html -> src="formato-immagini"-->
+<!--immagine esterna -->
+<img src="https://www.ideabit.com/album/foto_full/formato-immagini-webp_710.jpg" alt="immagine">
+<!-- tag semantici per le immagini-->
+<figure>
+    <img src="img/formato-immagini-webp_710.jpeg" alt="immagine">
+    <figcaption>Didascalia: Foto bella</figcaption>
+</figure>
+</body>
+</html>
