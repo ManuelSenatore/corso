@@ -1,0 +1,55 @@
+/* unità di misura */
+p {font: size 30px;} /* esiste anche pt */
+p {font-size: 1em;} /* proporzionale all'elemento parent */
+p {font-size: 1.1rem;} /* proporzionale alla root */
+div {width: 50%;} /* proporzionale all'elemento parent */
+/* vw proporzionale alla larghezza della view port */
+/* vh proporzionale all'altezza della view port */
+
+/*
+esempio 
+p {font-size:90%} -> div 16px -> p -> 14.4 px
+p {font-size:0.9em} -> div 16px -> p -> 14.4 px
+p {font-size:0.9rem} -> body 16px -> p -> 14.4 px
+p {font-size:0.9vw} -> viewport 400px -> p -> 3.6 px
+p {font-size:0.9vh} -> viewport 500px -> p -> 4.5 px
+*/
+/* colori */
+article p {color: crimson;} /* keyword */
+article p {color: #ff0000;} /* esadecimale */
+article p {color: #f00;} /* esa sintetico */
+article p {color: #0f0;}
+article p {color: #00f;}
+article p {color: rgb(0, 0, 255);} /* rgb */
+article p {color: rgb(0, 255, 0.5);} /* rgb + opacità */
+/* esadecimale + alpha, hsl, hsla */
+
+/* font */
+section p {font-family: 'Courier New', Courier, monospace;}
+/* Verdana, Arial, Helvetica, Garamond, Times new roman */
+section p {font-family: 'Roboto Flex', sans-serif;}
+
+/* formattazione dei testi */
+#secondo {
+    font-size: 1.1rem; /* px, em, %..*/
+    font-style: italic; /* normal */
+    font-weight: bold; /* normal, 100-900 */
+    line-height: 1.5; /* valori da zero in su */
+}
+div p {
+    color: #00f;
+    text-align: justify; /* left, right, justify */
+    text-indent: 2em; /* rientro prima linea */
+    text-transform: uppercase; /* alternativa lowercase */
+}
+/* aggiungere ombre */
+div h1 {
+    text-shadow:4px 4px 8px 2px #00f ;
+    /*
+      primo valore: disposizione orizzontale
+      secondo valore: disposizione verticale
+      terzo valore: raggio sfocatura
+      quarto valore: spread ombra
+      quinto valore :colore
+      */
+}
