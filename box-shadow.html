@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Box Shadow</title>
+        <meta name="description" content="">
+       <style>
+           /* background-size: auto -> mostra l'immagine alla dimensione originale */
+           /* background-size: cover -> fa il resize per occupare tutto il contenitore (taglia, stretchare) */
+           /* background-size: contain -> fa il resize per occupare tutto il contenitore (stretchare) */
+           #esempio1, #esempio2, #esempio3 {width: 300px; margin: 50px; padding: 10px;}
+           #esempio1 {
+               border: 1px solid #000;
+               padding: 10px;
+               box-shadow: 5px 10px;
+           }
+           #esempio2 {
+               border: 1px solid #000;
+               padding: 10px;
+               box-shadow: 5px 20px 10px #f00; /* se aggiungo un terzo valore è la sfocatura */
+           }
+           #esempio3 {background-image: url(img:paper.jpeg);} /* background-repeat: no repeat;*/
+           img {width: 300px; opacity: 0.5;}
+           img:hover {opacity: 1;}
+           .first, .second, .third, .fourth {background-color: green; padding: 10px; margin: 0; width: 200px;}
+           div.first {opacity: 0.3;}
+           div.second {opacity: 0.6;}
+           div.third {opacity: 0.8;}
+
+
+       </style>
+    </head>
+    <body>
+        <h1>Proprietà box shadow</h1>
+        <div id="esempio1">Un div con l'ombra. Il primo valore rappresenta lo scostamento orizzontale, il secondo valore quello verticale</div>
+        <div id="esempio2">Un div con l'ombra colorata. Il primo valore rappresenta lo scostamento orizzontale, il secondo valore quello verticale</div>
+        <h2>Background image</h2>
+        <div id="esempio3">Un div con uno sfondo</div>
+        <h2>Opacità</h2>
+        <img src="ivory-off-white-paper-texture-1.jpeg" alt="paper">
+        <div class="first"><p>Opacity 0.3</p></div>
+        <div class="second"><p>Opacity 0.6</p></div>
+        <div class="third"><p>Opacity 0.8</p></div>
+        <div class="fourth"><p>Opacity 1 (default)</p></div>
+   
+   
+    </body>
+</html>

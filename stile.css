@@ -1,82 +1,162 @@
 /* IMPOSTAZIONI GENERALI */
+* {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
 body {
- text-align: center;
- margin:auto;
- font-family: Arial, Helvetica, sans-serif;
- line-height: 1.5em;
- font-size: 1.1;
+    background-image: url(../img/sfondo.png);
+    font-family: 'Poppins', sans-serif;
 }
-hr{
-    border: dashed;
-}
-/* HEADER */
-header {
-    font-family:'Raleway', sans-serif; 
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #00A0C6;
-    padding: 4em;
-    border-bottom: 5px solid #027794;
-   }
-   h1 {
-       font-size: 25px;
-       color: antiquewhite;
-    }
-    span{ border: 1px solid white}
-   
-    h2 {font-size: 14px ; } 
-/* MAIN */
-blockquote {
-    background-color:rgb(207, 203, 203);
-    border-radius: 0em;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-main h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #00A0C6;
-    padding: 2em;
-}
-
-/* ELEMENTI NEL MAIN */
-
 strong {
-    color: #00A0C6;
+   color:blueviolet;
 }
-mark {
-    background-color:#00A0C6;
-    color: white;
+hr {
+    display: none;
 }
 a {
-    color: red;
-}
-div p {
-    text-align: left;
-}
-h3 {
-    text-align: left;
-}
-dl {
-    text-align: left;
-}
-ul {
-    margin: 10%;
-    text-align: left;
+    color: rgba(0,160,198,1) 0%;
+    font-weight: bold;
 }
 
-/* FOOTER */
-footer {
-    background-color: #353535;
+/* HEADER */
+header{
+    margin: 1rem;
     text-align: center;
-    border-top: 5px solid #027794;
+    padding: 1.8rem;
+    background: linear-gradient(rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    color: white;
+    box-shadow: 0 4px 4px rgb(53, 53, 53);
+    line-height: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header ul{
+    list-style-type: none;
+}
+
+code{
+    background-color: rgba(213, 212, 208, 0.753);
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}
+/* MAIN */
+main {
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgb(53, 53, 53) ;
+    border: 1px solid gray;
+}
+h1{
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    font-size: 2rem;   
+}
+article{
+    padding: 1rem;
+}
+.gray{
+     color: gray;
+     font-size: 1rem;
+     opacity: 0.6;
+     font-weight: bold;
+     text-align: left;
+}
+ul{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+ol{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+caption{
+    font-style: italic;
+    font-weight: bold;
+}
+table{
+    text-align: center;
+    box-sizing:border-box;
+}
+tbody tr:nth-child(even){background-color: #ccc;} 
+thead{
+    background-color:#3f6bca ;
     color: white;
 }
-kbd {
-    color: yellow;
+iframe{
+    text-align: center;
+    border-radius: 10px;
+    height: 10rem;
+    width: 100%;
 }
-small{
-    color: #555454;
+section{
+    background-color: rgba(213, 212, 208, 0.753);
 }
+section h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+}
+button{
+    background-color: #3f6bca;
+    color: white;
+}
+fieldset{
+    border-bottom: 2px dashed #3f6bca;
+    margin: 2px;
+    
+}
+aside h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+}
+main div{
+    background-color:rgba(213, 212, 208, 0.753) ;
+    margin: 1rem;
+}
+div a, p{
+    text-align: left;
+    font-size: 1rem;
+}
+div :nth-child(3){
+    text-align: right;
+}
+footer{
+    text-align: center;
+    margin: 1rem;
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    padding: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+footer p{
+    text-align: center;
+    margin: 1rem;
+}
+footer a{
+    color: violet;
+}
+
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
